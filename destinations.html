@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destinations | TravelEase</title>
+  <link rel="stylesheet" href="css/destination.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">TravelEase</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html" class="active">Destinations</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>Explore Our Top Destinations</h1>
+      <p>Discover the most beautiful places around the world</p>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar">
+    <select id="continent-filter">
+      <option value="">All Continents</option>
+      <option value="Asia">Asia</option>
+      <option value="Europe">Europe</option>
+      <option value="North America">North America</option>
+      <option value="Africa">Africa</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <select id="type-filter">
+      <option value="">All Types</option>
+      <option value="Beach">Beach</option>
+      <option value="City">City</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Romantic">Romantic</option>
+    </select>
+
+    <select id="budget-filter">
+      <option value="">All Budgets</option>
+      <option value="Budget">Budget</option>
+      <option value="Luxury">Luxury</option>
+    </select>
+  </section>
+
+  <!-- Destinations Grid -->
+  <section class="destinations-grid">
+    <div class="destination-card" data-continent="Europe" data-type="City" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" alt="Paris">
+      <div class="card-content">
+        <h3>Paris, France</h3>
+        <p>The City of Lights and endless romance.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Asia" data-type="Beach" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80" alt="Maldives">
+      <div class="card-content">
+        <h3>Maldives</h3>
+        <p>Tropical paradise with crystal-clear waters.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Asia" data-type="City" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&q=80" alt="Tokyo">
+      <div class="card-content">
+        <h3>Tokyo, Japan</h3>
+        <p>Neon nights, culture, and cutting-edge energy.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="North America" data-type="City" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1543788303-c15e49305bc6?auto=format&fit=crop&w=1200&q=80" alt="New York">
+      <div class="card-content">
+        <h3>New York, USA</h3>
+        <p>The city that never sleeps awaits you.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Asia" data-type="Beach" data-budget="Budget">
+      <img src="https://images.unsplash.com/photo-1604999333679-b86d54738315?auto=format&fit=crop&w=1200&q=80" alt="Bali">
+      <div class="card-content">
+        <h3>Bali, Indonesia</h3>
+        <p>Find peace among beaches, temples, and sunsets.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Europe" data-type="City" data-budget="Budget">
+      <img src="https://images.unsplash.com/photo-1529154036614-a60975f5c760?auto=format&fit=crop&w=1200&q=80" alt="Rome">
+      <div class="card-content">
+        <h3>Rome, Italy</h3>
+        <p>Walk through history in the Eternal City.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Europe" data-type="Romantic" data-budget="Luxury">
+      <img src="https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?auto=format&fit=crop&q=80&w=1470" alt="Santorini">
+      <div class="card-content">
+        <h3>Santorini, Greece</h3>
+        <p>Whitewashed cliffs and blue-domed beauty.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Asia" data-type="City" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1470" alt="Dubai">
+      <div class="card-content">
+        <h3>Dubai, UAE</h3>
+        <p>Luxury, innovation, and desert adventure.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Africa" data-type="Adventure" data-budget="Budget">
+      <img src="https://plus.unsplash.com/premium_photo-1697730039730-102912a08e70?auto=format&fit=crop&q=80&w=1668" alt="Cape Town">
+      <div class="card-content">
+        <h3>Cape Town, South Africa</h3>
+        <p>Mountains, beaches, and cultural diversity.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="destination-card" data-continent="Oceania" data-type="Beach" data-budget="Luxury">
+      <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80" alt="Sydney">
+      <div class="card-content">
+        <h3>Sydney, Australia</h3>
+        <p>Iconic opera house and golden beaches.</p>
+        <a href="booking.html" class="btn">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 TravelEase | All Rights Reserved</p>
+    <div class="socials">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+  </footer>
+
+  <!-- JS Filter -->
+  <script src="js/filter.js"></script>
+
+</body>
+</html>
